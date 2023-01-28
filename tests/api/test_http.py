@@ -11,9 +11,17 @@ def test_first_request():
 @pytest.mark.http
 def test_second_request():
     r = requests.get('https://api.github.com/users/defunkt')
-    print(f'\nResponse Boby is ...\n{"-" * 25}\n {r.json()}\n')
-    print("-" * 25)
-    print(f'Response Status code is ... {r.status_code}')
-    print("-" * 25)
-    print(f'Response Headers are ...\n{"-" * 25}\n {r.headers}')
+    body = r.json()
+    headers = r.headers
+
+    assert body['name'] == 'Chris Wanstrath'
+    assert r.status_code == 200
+    assert headers['Server'] == 'GitHub.com'
+
+
+@pytest.mark.http
+def test_status_code_request():
+    r = requests.get('https://api.github.com/users/sergii_butenko')
+
+    assert r.status_code == 404
 # pytest -m http -s (last flag (-s) for display print() in test)
