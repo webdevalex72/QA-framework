@@ -1,10 +1,11 @@
 import sqlite3
+from config.config import config_dict
 
 
 class Database:
     def __init__(self) -> None:
         self.connection = sqlite3.connect(
-            "/home/aleks/Code/QA-framework" + "/become_qa_auto.db"
+            config_dict['DB']['path']
         )
         self.cursor = self.connection.cursor()
 

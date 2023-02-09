@@ -1,5 +1,5 @@
-import os.path
 import pytest
+from config.config import config_dict
 
 
 from selenium import webdriver
@@ -22,11 +22,9 @@ def test_check_incorrect_username():
     # chrome_options.add_argument("--no-sandbox")
 
     # Set path to chromedriver as per your configuration
-    homedir = os.path.expanduser("~")
-    # Set path to chromedriver as per your configuration
     # & Choose Chrome Browser
     driver = webdriver.Chrome(
-        service=Service(f"{homedir}/chromedriver/stable/chromedriver"),
+        service=Service(config_dict['UI']['driver_path']),
         options=chrome_options
     )
 

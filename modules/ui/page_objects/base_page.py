@@ -1,4 +1,4 @@
-import os
+from config.config import config_dict
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
@@ -8,9 +8,7 @@ from selenium.webdriver.chrome.options import Options
 
 class BasePage:
     # Set path to chromedriver as per your configuration
-    HOMEDIR = os.path.expanduser("~")
-    PATH = HOMEDIR + "/chromedriver/stable/"
-    DRIVER_NAME = "chromedriver"
+    PATH = config_dict['UI']['driver_path']
 
     def __init__(self, headless=False, no_sandbox=False) -> None:
         self.chrome_options = Options()
@@ -20,7 +18,7 @@ class BasePage:
             self.chrome_options.add_argument("--no-sandbox")
 
         self.driver = webdriver.Chrome(
-            service=Service(BasePage.PATH + BasePage.DRIVER_NAME),
+            service=Service(BasePage.PATH),
             options=self.chrome_options,
         )
 

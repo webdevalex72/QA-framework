@@ -1,0 +1,7 @@
+API:
+    users: https://api.github.com/users/
+    repositories: https://api.github.com/search/repositories
+DB:
+    path: /home/aleks/Code/QA-framework/become_qa_auto.db
+UI:
+    driver_path: ~/chromedriver/stable/chromedriver

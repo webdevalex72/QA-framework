@@ -8,6 +8,7 @@ pytest = "*"
 flake8 = "*"
 requests = "*"
 selenium = "*"
+pyyaml = "*"
 
 [dev-packages]
 black = "*"
