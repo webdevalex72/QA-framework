@@ -1,4 +1,6 @@
-from modules.ui.page_objects.sing_in_page import SignInPage
+# tests/ui/test_ui_page_object.py
+"""This module defines UI test for incorrectly entering a username."""
+from modules.ui.page_objects.sign_in_page import SignInPage
 import pytest
 
 

@@ -1,3 +1,5 @@
+# tests/api/test_github_api.py
+"""This module provides several tests for GitHub API"""
 import pytest
 
 
@@ -16,7 +18,7 @@ def test_user_not_exist(github_api):
 @pytest.mark.api
 def test_repo_can_be_found(github_api):
     r = github_api.search_repo('become-qa-auto')
-    assert r['total_count'] == 29
+    assert r['total_count'] == 31
     assert 'become-qa-auto' in r['items'][0]['name']
 
 

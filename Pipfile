@@ -9,6 +9,9 @@ flake8 = "*"
 requests = "*"
 selenium = "*"
 pyyaml = "*"
+mkdocs = "*"
+mkdocstrings = {extras = ["python"], version = "*"}
+mkdocs-material = "*"
 
 [dev-packages]
 black = "*"

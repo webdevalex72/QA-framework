@@ -1,0 +1,16 @@
+# mkdocs.yml
+site_name: QA Modular Framework
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Home: index.md
+  - How-To Guides: how-to-guides.md
+  - Configuration: configuration.md
+  - API/client: api_test.md
+  - UI: ui_test.md
+  - Common: database_test.md

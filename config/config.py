@@ -1,3 +1,5 @@
+# config/config.py
+"""This module reads the config file & saves it to dict: config_dict."""
 import yaml
 
 

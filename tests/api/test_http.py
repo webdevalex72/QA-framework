@@ -1,3 +1,5 @@
+# tests/api/test_http.py
+"""This module provides HTTP tests."""
 import pytest
 import requests
 

@@ -1,3 +1,5 @@
+# tests/api/test_api.py
+"""This module defines some API tests."""
 import pytest
 
 

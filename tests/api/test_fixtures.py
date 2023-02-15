@@ -1,3 +1,5 @@
+# test/api/test_fixtures.py
+"""This module defines some API tests."""
 import pytest
 
 
