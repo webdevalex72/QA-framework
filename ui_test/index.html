@@ -1,0 +1,1163 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../api_test/">
+      
+      
+        <link rel="next" href="../database_test/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+    
+    
+      
+        <title>UI - QA Modular Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ui-test" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="QA Modular Framework" class="md-header__button md-logo" aria-label="QA Modular Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QA Modular Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QA Modular Framework" class="md-nav__button md-logo" aria-label="QA Modular Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    QA Modular Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-guides/" class="md-nav__link">
+        How-To Guides
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_test/" class="md-nav__link">
+        API/client
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UI
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ui-test" class="md-nav__link">
+    UI test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page" class="md-nav__link">
+    modules.ui.page_objects.base_page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page.BasePage" class="md-nav__link">
+    BasePage
+  </a>
+  
+    <nav class="md-nav" aria-label="BasePage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page.BasePage.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page.BasePage.close" class="md-nav__link">
+    close()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page" class="md-nav__link">
+    modules.ui.page_objects.sign_in_page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage" class="md-nav__link">
+    SignInPage
+  </a>
+  
+    <nav class="md-nav" aria-label="SignInPage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.check_title" class="md-nav__link">
+    check_title()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.go_to" class="md-nav__link">
+    go_to()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.try_login" class="md-nav__link">
+    try_login()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database_test/" class="md-nav__link">
+        Common
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ui-test" class="md-nav__link">
+    UI test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page" class="md-nav__link">
+    modules.ui.page_objects.base_page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page.BasePage" class="md-nav__link">
+    BasePage
+  </a>
+  
+    <nav class="md-nav" aria-label="BasePage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page.BasePage.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.base_page.BasePage.close" class="md-nav__link">
+    close()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page" class="md-nav__link">
+    modules.ui.page_objects.sign_in_page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage" class="md-nav__link">
+    SignInPage
+  </a>
+  
+    <nav class="md-nav" aria-label="SignInPage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.check_title" class="md-nav__link">
+    check_title()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.go_to" class="md-nav__link">
+    go_to()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.ui.page_objects.sign_in_page.SignInPage.try_login" class="md-nav__link">
+    try_login()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>UI</h1>
+
+<h2 id="ui-test">UI test</h2>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="modules.ui.page_objects.base_page"></a>
+  <div class="doc doc-contents first">
+  
+      <p>This module defines the class BasePage to connect
+&amp; set options web-driver.</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="modules.ui.page_objects.base_page.BasePage" class="doc doc-heading">
+        <code>BasePage</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Initialize web-driver with defined options.</p>
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>PATH</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Set path to the driver from config_dict.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        <details class="quote">
+          <summary>Source code in <code>modules/ui/page_objects/base_page.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">BasePage</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize web-driver with defined options.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        PATH (str): Set path to the driver from config_dict.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">PATH</span> <span class="o">=</span> <span class="n">config_dict</span><span class="p">[</span><span class="s1">&#39;UI&#39;</span><span class="p">][</span><span class="s1">&#39;driver_path&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Init options &amp; web-driver Chrome.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            headless (bool): if `True` GUI is off.</span>
+<span class="sd">            no_sandbox (bool): if `True` it run without the sandbox.</span>
+<span class="sd">                Usefull to run apps with docker or k8s</span>
+<span class="sd">                (without will be error).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">headless</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--headless&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">no_sandbox</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--no-sandbox&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span>
+            <span class="n">service</span><span class="o">=</span><span class="n">Service</span><span class="p">(</span><span class="n">BasePage</span><span class="o">.</span><span class="n">PATH</span><span class="p">),</span>
+            <span class="n">options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Provide a close method for the driver.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="modules.ui.page_objects.base_page.BasePage.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Init options &amp; web-driver Chrome.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>headless</code></td>
+          <td>
+                <code>bool</code>
+          </td>
+          <td><p>if <code>True</code> GUI is off.</p></td>
+          <td>
+                <code>False</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>no_sandbox</code></td>
+          <td>
+                <code>bool</code>
+          </td>
+          <td><p>if <code>True</code> it run without the sandbox.
+Usefull to run apps with docker or k8s
+(without will be error).</p></td>
+          <td>
+                <code>False</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>modules/ui/page_objects/base_page.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Init options &amp; web-driver Chrome.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        headless (bool): if `True` GUI is off.</span>
+<span class="sd">        no_sandbox (bool): if `True` it run without the sandbox.</span>
+<span class="sd">            Usefull to run apps with docker or k8s</span>
+<span class="sd">            (without will be error).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">headless</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--headless&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">no_sandbox</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--no-sandbox&quot;</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span>
+        <span class="n">service</span><span class="o">=</span><span class="n">Service</span><span class="p">(</span><span class="n">BasePage</span><span class="o">.</span><span class="n">PATH</span><span class="p">),</span>
+        <span class="n">options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chrome_options</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="modules.ui.page_objects.base_page.BasePage.close" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">close</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Provide a close method for the driver.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>modules/ui/page_objects/base_page.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Provide a close method for the driver.&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+<a id="modules.ui.page_objects.sign_in_page"></a>
+  <div class="doc doc-contents first">
+  
+      <p>This module defines the class SignInPage to test UI pages.</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="modules.ui.page_objects.sign_in_page.SignInPage" class="doc doc-heading">
+        <code>SignInPage</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="modules.ui.page_objects.base_page.BasePage" href="#modules.ui.page_objects.base_page.BasePage">BasePage</a></code></p>
+
+  
+      <p>Define const &amp; methods for testing Login GitHub page</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>modules/ui/page_objects/sign_in_page.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">SignInPage</span><span class="p">(</span><span class="n">BasePage</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Define const &amp; methods for testing Login GitHub page&quot;&quot;&quot;</span>
+    <span class="n">URL</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/login&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">headless</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize parent class &amp; define options</span>
+<span class="sd">        for Chrome.driver (--headless, --no-sandbox)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">headless</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">go_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Open sign-in page&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">SignInPage</span><span class="o">.</span><span class="n">URL</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">try_login</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Try to login</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            username: login username</span>
+<span class="sd">            password: user&#39;s password</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Search the login field by typing Username</span>
+        <span class="n">login_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;login_field&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Typing incorrect login</span>
+        <span class="n">login_elem</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+
+        <span class="c1"># Search password field</span>
+        <span class="n">password_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Typing an incorrect password</span>
+        <span class="n">password_elem</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+
+        <span class="c1"># Search the &quot;Sign-in&quot; button by attr. - name</span>
+        <span class="n">btn_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">NAME</span><span class="p">,</span> <span class="s2">&quot;commit&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Emulation LCM (left click mouse)</span>
+        <span class="n">btn_elem</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">check_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expected_title</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the content of the title tag &amp;</span>
+<span class="sd">        compare it with what is expected.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">expected_title</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="modules.ui.page_objects.sign_in_page.SignInPage.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Initialize parent class &amp; define options
+for Chrome.driver (--headless, --no-sandbox)</p>
+
+      <details class="quote">
+        <summary>Source code in <code>modules/ui/page_objects/sign_in_page.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">headless</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize parent class &amp; define options</span>
+<span class="sd">    for Chrome.driver (--headless, --no-sandbox)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">headless</span><span class="p">,</span> <span class="n">no_sandbox</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="modules.ui.page_objects.sign_in_page.SignInPage.check_title" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">check_title</span><span class="p">(</span><span class="n">expected_title</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the content of the title tag &amp;
+compare it with what is expected.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>modules/ui/page_objects/sign_in_page.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expected_title</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the content of the title tag &amp;</span>
+<span class="sd">    compare it with what is expected.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">expected_title</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="modules.ui.page_objects.sign_in_page.SignInPage.go_to" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">go_to</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Open sign-in page</p>
+
+      <details class="quote">
+        <summary>Source code in <code>modules/ui/page_objects/sign_in_page.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">go_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Open sign-in page&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">SignInPage</span><span class="o">.</span><span class="n">URL</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="modules.ui.page_objects.sign_in_page.SignInPage.try_login" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">try_login</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Try to login</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>username</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>login username</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>password</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>user's password</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>modules/ui/page_objects/sign_in_page.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">try_login</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Try to login</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        username: login username</span>
+<span class="sd">        password: user&#39;s password</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Search the login field by typing Username</span>
+    <span class="n">login_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;login_field&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Typing incorrect login</span>
+    <span class="n">login_elem</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+
+    <span class="c1"># Search password field</span>
+    <span class="n">password_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Typing an incorrect password</span>
+    <span class="n">password_elem</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+
+    <span class="c1"># Search the &quot;Sign-in&quot; button by attr. - name</span>
+    <span class="n">btn_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">NAME</span><span class="p">,</span> <span class="s2">&quot;commit&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Emulation LCM (left click mouse)</span>
+    <span class="n">btn_elem</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+    
+  </body>
+</html>
