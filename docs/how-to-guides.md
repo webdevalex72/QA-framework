@@ -31,7 +31,8 @@ The main idea is the pipline:
     ├── config
     │   ├── __init__.py
     │   ├── config.py
-    │   └── config.yaml
+    │   ├── config.yaml
+    │   └── utils.py
     ├── conftest.py
     ├── modules
     │   ├── api
